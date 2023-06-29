@@ -30,6 +30,7 @@ with app.app_context():
         image='/images/dove.jpeg'
     )
 
+
     print('Adding bird objects to transaction...')
     db.session.add_all([chickadee, grackle, starling, dove])
     print('Committing transaction...')
